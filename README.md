@@ -33,16 +33,20 @@ This repository is part of a dissertation project exploring Echo State Network (
 ## Getting Started
 
 1. **Clone the Repository**:
-    git clone <repository_url>
+    ```
+    git clone https://github.com/Doraemon-00/Traffic_Flow_Prediction_ESN.git
     cd Traffic_Flow_Prediction_ESN
+    ```
 
 2. **Install Requirements**:
+    ```
     pip install -r requirements.txt
+    ```
 
-3. **Set Up Data and Configuraitons**:
-    Place datasets in data/raw/ or download from external sources to data/external/.
-    Adjust configurations as needed in config/.
+3. **Set Up Data and Configuraitons**:  
+    Place datasets in `data/raw/` or download from external sources to `data/external/`.
+    Adjust configurations as needed in `config/`.
 
-4. **Run Experiments**:
-    Use scripts in src/ to preprocess data, train models, and evaluate results.
+4. **Run Experiments**:  
+    Use scripts in `src/` to preprocess data, train models, and evaluate results.
 
