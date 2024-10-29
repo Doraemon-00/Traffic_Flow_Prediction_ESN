@@ -44,7 +44,7 @@ This repository is part of a dissertation project exploring Echo State Network (
     ```
 
 3. **Set Up Data and Configuraitons**:  
-    Place datasets in `data/raw/` or download from external sources to `data/external/`.
+    Place datasets in `data/raw/` or download from external sources to `data/external/`.  
     Adjust configurations as needed in `config/`.
 
 4. **Run Experiments**:  
