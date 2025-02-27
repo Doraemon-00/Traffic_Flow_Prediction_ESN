@@ -1,6 +1,6 @@
 # Traffic Flow Prediction Using Echo State Networks (ESNs)
 
-This repository is part of a dissertation project exploring Echo State Network (ESN) architectures for predicting traffic flow patterns. Starting with a basic ESN, this project aims to evolve into more complex models, such as stacked and SpaRCe ESNs, to capture the complex temporal dynamics inherent in traffic data.
+This repository is part of a dissertation project exploring Echo State Networks (ESNs) for traffic flow prediction. The project begins with a basic ESN, followed by Hierarchical ESN (HESN) and HESN with Sparse Learning (HESN-SL) to improve model performance and computational efficiency.
 
 ## Project Structure
 
@@ -12,12 +12,13 @@ This repository is part of a dissertation project exploring Echo State Network (
 - **data/**: Contains datasets for training and testing.
     - `raw/`: Raw traffic datasets.
     - `processed/`: Preprocessed datasets ready for model input.
+    - `benchmark/`: Synthetic datasets for benchmarks (NARMA10, Mackey-Glass).
     - `external/`: External datasets with details on their source and format.
 
 - **models/**: Saved trained models, organized by architecture.
-    - `simple/`: Basic ESN models.
-    - `stacked/`: Stacked ESN models.
-    - `advanced/`: Advanced ESN models for complex experiments.
+    - `basic_esn/`: Basic ESN models.
+    - `hesn/`: Hierarchical ESN models.
+    - `hesn_sl/`: HESN with Sparse Learning.
 
 - **results/**: Stores evaluation metrics, visualizations, and logs.
     - `model_evaluations/`: Performance metrics for each model and experiment.
@@ -25,10 +26,11 @@ This repository is part of a dissertation project exploring Echo State Network (
     - `logs/`: Detailed logs from training and evaluation runs.
 
 - **src/**: Core code modules for data preprocessing, model definitions, and training scripts.
+    - `benchmarks/`: Scripts for running benchmark tests.
     - `data_preprocessing.py`: Functions for data cleaning, normalization, and transformation.
-    - `simple_esn/`: Basic ESN model setup and training scripts.
-    - `stacked_esn/`: Code for building and training a stacked ESN.
-    - `advanced_esn/`: Advanced ESN architectures.
+    - `basic_esn/`: Basic ESN model setup.
+    - `hesn/`: Hierarchical ESN implementation.
+    - `hesn_sl/`: HESN-SL training and evaluation.
 
 ## Getting Started
 
